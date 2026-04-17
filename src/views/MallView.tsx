@@ -15,12 +15,12 @@ export default function MallView() {
   ];
 
   const products = [
-    { id: 1, title: '双人豪华江景房套票含双早', price: '899', original: '1299', sold: 342, img: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=400&q=80', fallback: 'https://picsum.photos/seed/room-bed/400/400' },
-    { id: 2, title: '星级云端自助海鲜晚餐', price: '298', original: '398', sold: 891, img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=400&q=80', fallback: 'https://picsum.photos/seed/food-plate/400/400' },
-    { id: 3, title: '尊享90分钟热石SPA体验', price: '399', original: '599', sold: 124, img: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80', fallback: 'https://picsum.photos/seed/spa-relax/400/400' },
-    { id: 4, title: '行政酒廊双人英式下午茶', price: '168', original: '228', sold: 456, img: 'https://images.unsplash.com/photo-1495474472207-464a8d960c8b?auto=format&fit=crop&w=400&q=80', fallback: 'https://picsum.photos/seed/tea-cup/400/400' },
-    { id: 5, title: '周末特惠亲子主题房升级券', price: '199', original: '299', sold: 89, img: 'https://images.unsplash.com/photo-1522771739223-0ad44c802524?auto=format&fit=crop&w=400&q=80', fallback: 'https://picsum.photos/seed/family-kids/400/400' },
-    { id: 6, title: 'VIP恒温泳池健身房月卡', price: '299', original: '499', sold: 231, img: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80', fallback: 'https://picsum.photos/seed/pool-gym/400/400' },
+    { id: 1, title: '双人豪华江景房套票含双早', price: '899', original: '1299', sold: 342, img: '/images/prod1.jpg', fallback: '/images/fallback-prod1.jpg' },
+    { id: 2, title: '星级云端自助海鲜晚餐', price: '298', original: '398', sold: 891, img: '/images/prod2.jpg', fallback: '/images/fallback-prod2.jpg' },
+    { id: 3, title: '尊享90分钟热石SPA体验', price: '399', original: '599', sold: 124, img: '/images/prod3.jpg', fallback: '/images/fallback-prod3.jpg' },
+    { id: 4, title: '行政酒廊双人英式下午茶', price: '168', original: '228', sold: 456, img: '/images/prod4.jpg', fallback: '/images/fallback-prod4.jpg' },
+    { id: 5, title: '周末特惠亲子主题房升级券', price: '199', original: '299', sold: 89, img: '/images/prod5.jpg', fallback: '/images/fallback-prod5.jpg' },
+    { id: 6, title: 'VIP恒温泳池健身房月卡', price: '299', original: '499', sold: 231, img: '/images/prod6.jpg', fallback: '/images/fallback-prod6.jpg' },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function MallView() {
       {/* 顶部 Banner - Editorial luxury feel */}
       <div className="w-full h-64 relative bg-stone-900">
         <img
-          src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+          src="/images/mall-banner.jpg"
           alt="Mall Banner"
           className="w-full h-full object-cover opacity-60"
           referrerPolicy="no-referrer"

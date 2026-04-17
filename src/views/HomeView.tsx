@@ -12,7 +12,7 @@ export default function HomeView() {
       {/* 轮播图片 Carousel */}
       <div className="relative w-full h-72 bg-gray-200">
         <img
-          src="https://picsum.photos/seed/hotel-resort/800/600"
+          src="/images/hotel-resort.jpg"
           alt="Hotel Resort"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
@@ -75,9 +75,9 @@ export default function HomeView() {
           </div>
           <div className="flex space-x-3 overflow-x-auto pb-2 scrollbar-hide snap-x">
              {[
-               { id: 1, title: '特惠江景房', img: 'https://picsum.photos/seed/room-river/300/300' },
-               { id: 2, title: '行政套房', img: 'https://picsum.photos/seed/room-suite/300/300' },
-               { id: 3, title: '家庭联通房', img: 'https://picsum.photos/seed/room-family/300/300' }
+               { id: 1, title: '特惠江景房', img: '/images/room-river.jpg' },
+               { id: 2, title: '行政套房', img: '/images/room-suite.jpg' },
+               { id: 3, title: '家庭联通房', img: '/images/room-family.jpg' }
              ].map((item) => (
                 <div key={item.id} className="flex-shrink-0 w-36 rounded-xl overflow-hidden relative shadow-sm border border-gray-100 snap-start">
                    <img src={item.img} alt={item.title} className="w-full h-36 object-cover" referrerPolicy="no-referrer" />
@@ -113,7 +113,7 @@ export default function HomeView() {
           </div>
           <div className="grid grid-cols-2 gap-3 h-64">
             <div className="rounded-xl overflow-hidden relative shadow-sm group cursor-pointer">
-              <img src="https://picsum.photos/seed/chongqing1/400/600" alt="Chongqing 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+              <img src="/images/chongqing1.jpg" alt="Chongqing 1" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               <div className="absolute bottom-3 left-3 right-3 text-white">
                 <p className="text-sm font-bold leading-tight">洪崖洞夜景打卡</p>
@@ -124,14 +124,14 @@ export default function HomeView() {
             </div>
             <div className="grid grid-rows-2 gap-3">
               <div className="rounded-xl overflow-hidden relative shadow-sm group cursor-pointer">
-                <img src="https://picsum.photos/seed/chongqing2/400/300" alt="Chongqing 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                <img src="/images/chongqing2.jpg" alt="Chongqing 2" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                  <div className="absolute bottom-2 left-2 right-2 text-white">
                     <p className="text-xs font-bold">轻轨穿楼奇观</p>
                  </div>
               </div>
               <div className="rounded-xl overflow-hidden relative shadow-sm group cursor-pointer">
-                <img src="https://picsum.photos/seed/chongqing3/400/300" alt="Chongqing 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                <img src="/images/chongqing3.jpg" alt="Chongqing 3" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                  <div className="absolute bottom-2 left-2 right-2 text-white">
                     <p className="text-xs font-bold">老街文化漫步</p>
@@ -148,7 +148,7 @@ export default function HomeView() {
           </div>
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
              <div className="relative h-44 bg-gray-200 flex items-center justify-center cursor-pointer group">
-                 <img src="https://picsum.photos/seed/hotel-brand/800/400" alt="Brand Video" className="absolute inset-0 w-full h-full object-cover" referrerPolicy="no-referrer"/>
+                 <img src="/images/hotel-brand.jpg" alt="Brand Video" className="absolute inset-0 w-full h-full object-cover" referrerPolicy="no-referrer"/>
                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
                     <div className="w-12 h-12 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
                       <div className="w-0 h-0 border-t-[7px] border-t-transparent border-l-[11px] border-l-blue-900 border-b-[7px] border-b-transparent ml-1"></div>
